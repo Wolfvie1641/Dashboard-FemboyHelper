@@ -2,8 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import { RefreshCw, Save, Heart, Play } from "lucide-react";
 import { io } from "socket.io-client";
 
-const API = "http://localhost:3001/wedding";
-const socket = io("http://localhost:3001", { transports: ["websocket"] });
+const API = "https://backend-femboyhelper-production.up.railway.app/wedding";
+const socket = io("https://backend-femboyhelper-production.up.railway.app", { transports: ["websocket"] });
 socket.emit("identify", "dashboard");
 
 export default function WeddingDashboard({ guildId }) {
