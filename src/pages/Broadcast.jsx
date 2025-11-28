@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import { RefreshCw, Send as SendIcon, AtSign, Hash } from "lucide-react";
 
-const API = "http://localhost:3001/broadcast";
+const API = "https://backend-femboyhelper-production.up.railway.app/broadcast";
 
 export default function Broadcast() {
   const [channels, setChannels] = useState([]);
