@@ -6,7 +6,7 @@ export default function DashboardHome() {
 
   useEffect(() => {
     const load = () => {
-      fetch("http://localhost:3001/stats")
+      fetch("https://backend-femboyhelper-production.up.railway.app/stats")
         .then((res) => res.json())
         .then(setStats);
     };
