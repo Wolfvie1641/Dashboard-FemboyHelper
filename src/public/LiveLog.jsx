@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
 
-const socket = io("http://localhost:3001", { transports: ["websocket"] });
+const socket = io("https://backend-femboyhelper-production.up.railway.app", { transports: ["websocket"] });
 socket.emit("identify", "dashboard");
 
 export default function LiveLog() {
